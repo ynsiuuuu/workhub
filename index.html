@@ -1,96 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="/_vercel/insights/script.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css"
-    />
-    <title>Vercel HTML Starter</title>
-    <meta
-      name="description"
-      content="High-performance HTML based website template."
-    />
-  </head>
-  <body>
-    <h1>Vercel HTML Starter</h1>
-    <p>
-      This template is a simple, but powerful single
-      <code>index.html</code> file deployed to
-      <a href="https://vercel.com">Vercel</a>. When your site is deployed, all
-      static assets (like HTML, JavaScript, CSS, images, and more) are deployed
-      globally to every
-      <a href="https://vercel.com/docs/concepts/edge-network/overview"
-        >Vercel Edge Network</a
-      >
-      region.
-    </p>
-    <h2>Simple, privacy-friendly analytics</h2>
-    <p>
-      Want to understand your visitor traffic? Vercel Analytics gives you
-      first-party, privacy-friendly traffic analytics for your HTML site. This
-      template is already configured using the following script:
-    </p>
-    <pre><code>&lt;script defer src="/_vercel/insights/script.js"&gt;&lt;/script&gt;</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/analytics">Vercel Analytics</a>.
-    </p>
-    <h2>Integrated with git</h2>
-    <p>
-      Deploying updates to your site is as simple as
-      <code>git push</code> thanks to Vercel's advanced
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-      Support for GitHub, GitLab, Bitbucket is zero-configuration, and with the
-      flexible Vercel CLI and API, you can integrate with any tool possible.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/git">Git Integration</a>.
-    </p>
-    <h2>Fast <code>gzip</code> compression</h2>
-    <p>
-      To help ensure the smallest possible file sizes for your static assets,
-      the Vercel Edge Network compresses files by default using
-      <code>gzip</code>. You can also optionally use
-      <code>brotli</code> compressesion if you prefer.
-    </p>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/edge-network/compression"
-        >compression</a
-      >.
-    </p>
-    <h2>Advanced routing configuration</h2>
-    <p>
-      Vercel gives you a variety of ways to configure the routing of your
-      website. For example, adding redirects, rewrites, or headers to your page.
-      While you can use <code>vercel.json</code> to define these through JSON,
-      you can also express your routing configuration as code using
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-    <p>
-      Middleware runs before the
-      <a href="https://vercel.com/docs/concepts/edge-network/caching"
-        >Vercel Edge Network Cache</a
-      >, so you can configure routing exactly as your application needs. For
-      example, this template uses <code>middleware.js</code> defined in the root
-      of the repository to add additional security headers to the site:
-    </p>
-    <pre><code>referrer-policy: origin-when-cross-origin
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-x-content-type-options: nosniff
-x-dns-prefetch-control: on
-x-frame-options: DENY</code></pre>
-    <p>
-      Learn more about
-      <a href="https://vercel.com/docs/concepts/functions/edge-middleware"
-        >Vercel Edge Middleware</a
-      >.
-    </p>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WorkHub — Find Jobs & Workers</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Work<span class="accent">Hub</span></a>
+      <nav class="main-nav">
+        <a href="jobs.html">Jobs</a>
+        <a href="workers.html">Workers</a>
+        <a href="post-job.html" class="btn btn-primary">Post Job</a>
+        <a href="login.html">Login</a>
+        <a href="about.html">About</a>
+      </nav>
+      <button class="nav-toggle" aria-label="toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>WorkHub Space of Work !</h1>
+        <p class="lead">A clean marketplace for employers and workers. Safe and easy to use, guaranteed results, and hire quickly.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="jobs.html"><strong>Find a Job</strong> </a>
+          <a class="btn" href="post-job.html"><strong>Post a Job</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature">
+        <h3>For Employers</h3>
+        <p>Post jobs, shortlist workers, and manage applications in one place.</p>
+      </article>
+      <article class="feature">
+        <h3>For Workers</h3>
+        <p>Create a profile, apply to jobs, and showcase your skills.</p>
+      </article>
+      <article class="feature">
+        <h3>Safe & Transparent</h3>
+        <p>Ratings, verified profiles, and built-in messaging keep things smooth.</p>
+      </article>
+    </section>
+
+    <section class="container latest">
+      <h2>Latest Jobs</h2>
+      <div class="grid jobs-grid">
+        <article class="job-card">
+          <h3>Frontend Developer</h3>
+          <p class="meta">BOUMERDESS ·Full-time · 53000DA/Month.</p>
+          <p class="desc">Work on modern React applications, collaborate with product and design teams.</p>
+          <div class="job-actions">
+            <a class="btn" href="jobs.html">View more</a>
+          </div>
+        </article>
+        <article class="job-card">
+          <h3>Electrician</h3>
+          <p class="meta">BISKRA, ALGERIA ·2 Years Contract </p>
+          <p class="desc">Experienced electrician needed for residential installations.</p>
+          <div class="job-actions">
+            <a class="btn" href="jobs.html">View more</a>
+          </div>
+        </article>
+        <article class="job-card">
+          <h3>Graphic Designer</h3>
+          <p class="meta">BEJAIA · Net working · 3400DA/Day</p>
+          <p class="desc">Branding and marketing materials for fast-growing startup.</p>
+          <div class="job-actions">
+            <a class="btn" href="jobs.html">View more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  
+
+  
+</body>
 </html>
